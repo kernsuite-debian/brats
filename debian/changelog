@@ -1,21 +1,3 @@
-brats (2.6.3-1kern4) bionic; urgency=medium
-
-  * Run time deps
-
- -- KERN packaging <packaging@kernsuite.info>  Mon, 18 May 2020 22:35:44 +0200
-
-brats (2.6.3-1kern3) bionic; urgency=medium
-
-  * Add x11
-
- -- KERN packaging <packaging@kernsuite.info>  Mon, 18 May 2020 22:35:44 +0200
-
-brats (2.6.3-1kern2) bionic; urgency=medium
-
-  * Add gfortran
-
- -- KERN packaging <packaging@kernsuite.info>  Mon, 18 May 2020 22:17:44 +0200
-
 brats (2.6.3-1kern1) bionic; urgency=low
 
   [ Athanaseus Javas Ramaila]
