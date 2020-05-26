@@ -1,0 +1,31 @@
+#!/usr/bin/make -f
+# You must remove unused comment lines for the released package.
+#export DH_VERBOSE = 1
+#export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+#export DEB_CFLAGS_MAINT_APPEND  = -Wall -pedantic
+#export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
+#export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
+# 52 INSTALLFROM = /some/path/to/BRATS_v263_Linux
+#export INSTALLTO = /usr/lib
+#export LIBS = /usr/lib
+#export INCLUDE = /usr/lib
+
+#CMAKE_FLAGS = \
+#        -DLD_LIBRARY_PATH=/usr/local/pgplot \
+#        -DPGPLOT_DIR=/usr/local/pgplot \
+#        -DINSTALLTO=/usr/lib
+
+%:
+	dh $@  
+
+#override_dh_auto_config:
+#	dh_auto_config -- -DINSTALLTO=debian/brat/usr/bin/
+#
+#override_dh_auto_install:
+#	$(MAKE) prefix=/usr brats
+#
+#override_dh_auto_build:
+#	make INSTALLTO=$$(pwd)/debian/brat/usr/bin
+
+#override_dh_install:
+#	dh_install -- prefix=/usr

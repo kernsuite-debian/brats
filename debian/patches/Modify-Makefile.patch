@@ -1,0 +1,39 @@
+Author: KERN packaging <packaging@kernsuite.info>
+Date: 2020-05-08
+Subject: Environmnet variables and linking libraries
+
+
+diff --git a/Makefile b/Makefile
+index e21c62f..fd1f430 100644
+--- a/Makefile
++++ b/Makefile
+@@ -49,20 +49,15 @@
+ ###############################################################################################
+ 
+ 
+-INSTALLFROM = /some/path/to/BRATS_v263_Linux
+-INSTALLTO = /some/path/to/install/brats
+-PGPLOT = /soft/pgplot
+-LIBS = /soft/lib
+-INCLUDE = /soft/include
+-X11LIBS = /usr/lib
+-GCC = /usr/lib/gcc/x86_64-redhat-linux/3.4.6/
++INSTALLFROM =
++INSTALLTO =
++PGPLOT = /usr/local/pgplot/
++INCLUDE = /usr/include/funtools/
++LIBS = /usr/lib/
++X11LIBS = /usr/lib/X11/
++GCC = /usr/lib/gcc/x86_64-linux-gnu/7/
+ 
+ 
+ brats: main.c
+-	mkdir -p $(INSTALLTO)
+-	mkdir -p $(INSTALLTO)/docs
+-	gcc -fopenmp -w -g -O2 -c main.c -c $(INSTALLFROM)/synchrotron_src/synchrotron.c $(INSTALLFROM)/synchrotron_src/bessel.c $(INSTALLFROM)/synchrotron_src/gsl_integ.c -I$(INCLUDE) -I$(PGPLOT) -I$(INSTALLFROM)/synchrotron_src
+-	gfortran -fopenmp main.o bessel.o gsl_integ.o -L$(X11LIBS) -L$(LIBS) -L$(PGPLOT) -L$(GCC) -lcpgplot -lpgplot -lfuntools -lm -lX11  -lpng -lgsl -lgslcblas -lg2c -lreadline -o $(INSTALLTO)/brats
+-	cp $(INSTALLFROM)/updates.txt $(INSTALLTO)/docs/
+-	cp $(INSTALLFROM)/bratscookbook.pdf $(INSTALLTO)/docs/
+-
++	gcc -fopenmp -w -g -O2 -c main.c -c $(INSTALLFROM)synchrotron_src/synchrotron.c $(INSTALLFROM)synchrotron_src/bessel.c $(INSTALLFROM)synchrotron_src/gsl_integ.c -I$(INCLUDE) -I$(PGPLOT) -I$(INSTALLFROM)synchrotron_src
++	gfortran -fopenmp main.o bessel.o gsl_integ.o -L$(X11LIBS) -L$(LIBS) -L$(PGPLOT) -lcpgplot -lpgplot -lfuntools -lm -lX11  -lpng -lgsl -lgslcblas -lreadline -o $(INSTALLTO)brats

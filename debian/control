@@ -1,0 +1,25 @@
+Source: brats
+Section: science
+Priority: extra
+Maintainer: KERN Suite <KERN packaging <packaging@kernsuite.info>
+Build-Depends: debhelper (>=9),
+               gcc,
+               gfortran,
+               libfuntools-dev,
+               libgsl-dev,
+               libpng-dev,
+               libreadline-dev,
+               libx11-dev,
+               pgplot5
+Standards-Version: 4.4.1
+Homepage: http://www.askanastronomer.co.uk/brats/
+
+Package: brats
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}, ${shlibs:Depends},
+ pgplot5, funtools, libgsl23, libcpgplot0
+Description: Spectral analysis software for the new generation of broadband of radio telescope
+ Provides a wide range of model fitting, visualization and statistical tools
+ for the analysis of radio maps with good frequency coverage over a
+ large frequency range.

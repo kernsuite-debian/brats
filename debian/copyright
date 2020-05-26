@@ -1,0 +1,64 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: brats
+Source: http://www.askanastronomer.co.uk/brats/
+#
+# Please double check copyright with the licensecheck(1) command.
+
+Files:     Makefile
+           Makefile_Alt
+           adaptiveregions.h
+           applyfixedregions.h
+           bratscookbook.pdf
+           calcspecindex.h
+           chisquaredmap.h
+           chomp.h
+           colourcolour.h
+           commandlist.h
+           commandlist_functions.h
+           comparisonplots.h
+           curvature.h
+           diffmap.h
+           drawbeam.h
+           errormap.h
+           fluxerrors.h
+           fluxmap.h
+           fullexport.h
+           fullimport.h
+           help.h
+           injectbyregion.h
+           injectchibyregion.h
+           list.h
+           load.h
+           main.c
+           mapfrommodel.h
+           mapscale.h
+           mergeimages.h
+           plotflux.h
+           plotpolyfit.h
+           plotspecindex.h
+           plottotalflux.h
+           resizeimages.h
+           scalefluxes.h
+           singleregion.h
+           smoothmaps.h
+           specindexerrormap.h
+           spectralagemap.h
+           synchrotron_src/bessel.c
+           synchrotron_src/bessel.h
+           synchrotron_src/ci_model.h
+           synchrotron_src/constants.h
+           synchrotron_src/gsl_integ.c
+           synchrotron_src/gsl_integ.h
+           synchrotron_src/synchrotron.c
+           syscom.h
+           updates.txt
+Copyright:  2012 - 2018 Jeremy Harwood <Jeremy.Harwood@physics.org>
+License:   __NO_COPYRIGHT_NOR_LICENSE__
+
+Files: debian/*
+Copyright: 2020 Athanaseus Javas Ramaila <ramaila.jat@gmail.com>
+License: MIT
+
+#----------------------------------------------------------------------------
+# Files marked as NO_LICENSE_TEXT_FOUND may be covered by the following
+# license/copyright files.

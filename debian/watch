@@ -1,0 +1,3 @@
+version=3
+http://www.askanastronomer.co.uk/brats/ \
+      downloads/BRATS_v|([\d\.]+)_Linux\.tar\.gz
