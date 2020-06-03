@@ -1,3 +1,10 @@
+brats (2.6.3-1kern2) bionic; urgency=low
+
+  [ Athanaseus Javas Ramaila]
+  * Substitude pgplot with giza
+
+ -- KERN packaging <packaging@kernsuite.info>  Wed, 03 Jun 2020 17:12:40 +0200
+
 brats (2.6.3-1kern1) bionic; urgency=low
 
   [ Athanaseus Javas Ramaila]
