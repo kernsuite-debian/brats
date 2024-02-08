@@ -1,3 +1,10 @@
+brats (2.6.3-1kern4) jammy; urgency=medium
+
+  [ Athanaseus Javas Ramaila ]
+  * Build for jammy
+
+ -- Athanaseus Ramaila <athanaseus@ip-172-31-4-26.af-south-1.compute.internal>  Thu, 08 Feb 2024 09:50:15 +0000
+
 brats (2.6.3-1kern3) focal; urgency=medium
 
   [ Athanaseus Javas Ramaila ]
